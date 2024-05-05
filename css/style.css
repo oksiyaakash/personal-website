@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+
+
+/*--- Index
+1. home
+2. Navigation
+3. About
+4. Quote 1
+5. Projects
+
+/*----------------------*/
+#error{
+  height: 80vh;
+  background: url(../images/page-not-found.png) no-repeat center center;
+  background-size: cover;
+}
+/*---------------------*/
+
+
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+  color: #2c3035;
+  position: relative;
+ 
+}
+.jumbotron{
+  border-radius: 0rem;
+}
+
+/*--------------------------------------------------------------------------
+-------------------------------------------------------------------------------*/
+/*--- 1. Section Home start ---*/
+#logo{
+height: 200px;
+border-radius: 10rem;
+border: 1px solid rgb(75, 75, 209);
+box-shadow: 0px 0px 15px 8px #190a9b;
+margin-bottom: 30px;
+
+}
+
+#home{
+  background: url(../images/technology-keyboard2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'DM Sans', sans-serif;
+  /* height: 90vh */
+}
+#home h1{
+  font-size: 3.2rem;
+}
+#home p{
+  font-size: 1.4rem;
+}
+
+.black-glass{
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 1.5rem;
+  padding: 1rem 0rem 1rem 0rem;
+  width: 65vw;
+  margin: 0 auto;
+}
+
+/*--- Section Home Ends ---*/
+
+/*----------------------------------------------------------------------------
+-----------------------------------------------------------------------------*/
+
+/*- 2.  Navigation Starts--*/
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 0rem 1.5rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-nav li{
+  padding-right: 1.5rem;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {color: #1ebba3; }
+
+#theme{   /*Button style to change site theme*/
+  border: 0;
+  padding: 0;
+  background-color: inherit;
+}
+/*--Navigation Ends--*/
+
+/*--------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+/*-- 3. About starts--*/
+
+#about{
+  background-color: #7f8894;
+}
+.para{
+  text-align: justify;
+  text-indent: 60px;
+}
+
+.site-body{
+  background-color: white;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.section-title{
+  text-align: center;
+  text-transform: uppercase;
+}
+.list-inline{
+  padding-bottom: 1rem;
+}
+.skill-item{
+  color: white;
+  background-color: #7f8894;
+padding: 0rem 0.5rem;
+border-radius: 0.5rem;
+}
+/*---  About Ends---*/
+/*---------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+
+/*--4. quote 1  start----*/
+.quote{
+  text-align: center;
+  padding: 0 1rem;
+}
+
+blockquote{
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.cite{
+  text-align: right;
+}
+
+blockquote::before{
+  content: open-quote;
+  color: rgb(106, 106, 218);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+ padding-right: 0.2rem;
+ 
+}
+blockquote::after{
+  content: close-quote;
+  color: rgb(106, 106, 218);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  padding-left: 0.2rem;
+  
+}
+
+/*--- quote 1 end ---*/
+
+/*----------------------------------------------------------------------------
+----------------------------------------------------------------------------*/
+/*---5. projects start*/
+.project-group{
+  display: flex;
+  justify-content: center;
+}
+/*-- projects ends*/
+/*----------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+/*---Hire-me start---*/
+#hire{
+  background: url(../images/hello-contact.png) no-repeat center center fixed ;
+  background-size: cover;
+  color: white;
+  background-color: #7f8894;
+  /* #383d44 */
+  text-align: center;
+  height: 80vh;
+}
+/* ---Hire-me ends---*/
+
+/*-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
+/*---footer starts---*/
+.footer{
+  background-color: #565d66;
+color: white;
+}
+.footer p{
+  text-align: center; 
+  margin-bottom: 0rem;
+}
+/*---footer ends---*/
+
+/*----------------Media Query-----------------*/
+
+@media only screen and (max-width: 600px) {
+  #error{
+    height: 30vh;
+    background: url(../images/page-not-found.png) no-repeat center center;
+    background-size: cover;
+  }
+ #home{
+   padding-top: 3.5rem;
+ }
+
+ #logo{
+  height: 175px;
+  border-radius: 10rem;
+  border: 1px solid rgb(75, 75, 209);
+  box-shadow: 0px 0px 15px 8px #190a9b;
+  margin-bottom: 30px;
+  
+  }
+  .site-body{
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .black-glass{
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 1.5rem;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .skill-item{
+    color: white;
+    background-color: #7f8894;
+  padding: 0rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3rem;
+  }
+}
